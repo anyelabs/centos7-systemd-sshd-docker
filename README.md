@@ -1,2 +1,1 @@
-# centos7-systemd-sshd-docker
-CentOS 7 sshd on systemd
+# CentOS 7 SSH Server on system
