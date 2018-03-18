@@ -14,6 +14,9 @@ RUN systemctl enable sshd.service
 ENV ROOTPWD toor-eq-R00T
 RUN echo "root:${ROOTPWD}" | chpasswd 
 
+RUN mkdir -p /data/
+VOLUME /data
+
 EXPOSE 22
 
 CMD ["/usr/sbin/init"]
